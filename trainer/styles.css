@@ -1,0 +1,66 @@
+/* This part of the code styles the entire page.
+It sets the default font to Arial and specifies a generic sans-serif font as a fallback.
+The background color is set to a light gray (#f0f0f0).
+Margins and padding for the `<body>` element are set to zero, removing any default spacing. */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+/* This code styles a container element (with the class "container") that wraps the form.
+It sets a maximum width of 600 pixels, centers it horizontally (`margin: 0 auto`), adds padding, and gives it a white background.
+A box shadow is applied to create a subtle shadow effect. */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the form 
+This code styles the form itself (with the class "attendance-form").
+It centers the form elements horizontally using `text-align: center`.
+Adds padding around the form to provide spacing.*/
+.attendance-form {
+    text-align: center;
+    padding: 20px;
+}
+/* This part styles the heading within the form.
+It sets the font size to 24 pixels and adds a margin at the bottom to create spacing. */
+.attendance-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -54,13 +54,13 @@ trainer can mark attendance of members   -->
             // Simulate authentication 
             if (username === "member" && password === "memberpassword") {
                 // Redirect user to the user dashboard
-                window.location.href = "members.html";
+                window.location.href = "./members/members.html";
             } else if (username === "admin" && password === "adminpassword") {
                 // Redirect admin to the admin dashboard
-                window.location.href = "adminpanel.html";
+                window.location.href = "./Admin/adminpanel.html";
             } else if(username === "trainer" && password === "trainerpassword"){
                 // Redirect trainer to trainer dashboard
-                window.location.href = "trainer.html";
+                window.location.href = "./trainer/trainer.html";
             } else {
                 // Show an error message for invalid credentials
                 alert("Invalid username or password. Please try again.");
