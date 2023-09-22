@@ -67,6 +67,36 @@ trainer can mark attendance of members   -->
             }
         });
     </script>
+    <!-- <script>
+        document.getElementById("login-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+    
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            var userType = document.getElementById("user-type").value;
+    
+            fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    username: username,
+                    password: password,
+                    userType: userType
+                })
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = response.url;
+                } else {
+                    alert('Invalid username or password. Please try again.');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script> -->
+    
 </body>
 </html>
 
